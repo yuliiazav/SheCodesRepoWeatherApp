@@ -1,0 +1,203 @@
+    body {
+        margin: 0;
+        font: 400 16px/23px 'Oxygen', sans-serif;
+        color: #48555B;
+        background-color: #fff;
+    }
+    
+    .wrapper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .weather-app {
+        width: 800px;
+        margin: 0 auto;
+        border: 2px solid #0dcaf0;
+        padding: 30px 0;
+        background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    }
+
+    .selectedcity {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 82px 20px 100px;
+    }
+    
+    .localtime-field {
+        text-align: center;
+    }
+    .search-field {
+        display: flex;
+        flex-direction: column;
+         flex: 1 200px;
+        padding: 10px;
+
+    }
+    
+    .selectedcity__field {
+        flex: 8 200px;
+        border: 2px solid #fefe0f;
+        padding: 10px;
+    }
+    
+    .selected {
+        margin-left: 2px;
+        font-size: 18px;
+        position: relative;
+    }
+    
+    .celcius-unitlink.unitlink {
+        position: relative;
+    }
+    
+    .selected:last-child {
+        margin-left: 0;
+    }
+    
+    .selectedcity-temperature.selected {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
+    
+    .selectedcity-name {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #3d5e64;
+    }
+    
+    .search-city {
+        border: transparent;
+        margin-bottom: 3px;
+        position: relative;
+    }
+    .btn-style.current-btn {
+        border-color: #fefe0f;
+        position: absolute;
+        top: 67px;
+        right: 92px;
+        width: 57px;
+        height: 27px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .btn-style {
+        border-color: #0dcaf0;
+        background: transparent;
+        border-radius: 5px;
+        padding: 0;
+        width: 57px;
+        height: 27px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .submit-btn:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .btn-style.current-btn:hover {
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    }
+    
+    .unitlink {
+        color: #0dcaf0;
+        font-size: 13px;
+        vertical-align: super;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 7px 0 0;
+    }
+    
+    .celcius-unitlink.unitlink::after {
+        content: "";
+        width: 1px;
+        height: 13px;
+        background: #48555b;
+        position: absolute;
+        top: 5px;
+        right: -5px;
+    }
+    
+    .localtime-field {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Kalam', cursive;
+    }
+    
+    .selectedcity__current {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .search-cityinput {
+        border: 1px solid #0dcaf0;
+        border-radius: 0px;
+        margin: 0px 0 10px 0;
+    }
+    
+    .selectedcity__weather-condition {
+        position: relative;
+    }
+    
+    .temperature-list,
+    .time-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        border: 1px solid #0dcaf0;
+    }
+    
+    .table-heading {
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 2px solid #0dcaf0;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+    }
+    
+    .temperature-list__item {
+        font-size: 15px;
+        font-family: 'Kalam', cursive;
+        margin: 20px 30px;
+    }
+    
+    .time-list__item {
+        margin: 20px 0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .weather-days {
+        padding: 0 20px 0 40px;
+    }
+    
+    .days__weathericon {
+        text-align: center;
+    }
+    
+    .time__heading.table-heading {
+        opacity: 0;
+    }
+    
+    .time-col {
+        padding: 0;
+    }
+    
+    .time-list {
+        border-color: transparent;
+    }
+    
+    .today-forecast .temperature-list {
+        border: 1px solid #fefe0f;
+    }
+    
+    .today-forecast .table-heading {
+        border-color: #fefe0f;
+    }
